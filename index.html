@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Mercado Cheque a MECHE · The Capital Network — Propuesta de Rebranding · Popcorn</title>
+<meta name="description" content="Propuesta estratégica de rebranding integral preparada por Popcorn para MECHE, The Capital Network. De una fintech de cheques a la infraestructura del capital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ===== Popcorn frame ===== */
+  --purple:#6B21D6; --purple-deep:#2A0F5C; --purple-soft:#3D1D7A;
+  --cyan:#5EEAD4; --cyan-deep:#0FB39A;
+  --black:#0A0A0A; --black-2:#111114;
+  --white:#FFFFFF; --g100:#F5F5F7; --g300:#C4C4CF; --g500:#8E8E9C; --g700:#3A3A44;
+  /* ===== MECHE world ===== */
+  --m-bg:#04130C; --m-bg2:#071c11; --m-card:#0a2417; --m-line:rgba(120,224,170,0.14);
+  --m-green:#007241;          /* heritage anchor — el verde que sobrevive */
+  --m-green-2:#0E9E5A;
+  --m-accent:#1FE08A;         /* energía / capital en movimiento */
+  --m-soft:rgba(229,255,242,0.74); --m-mut:rgba(229,255,242,0.5);
+  --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --display:'Space Grotesk','Inter',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--black);color:var(--white);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-weight:800;letter-spacing:-0.02em;line-height:1.04}
+/* sin cursivas en ningún lado — los acentos son color + peso */
+em,.em{font-style:normal;font-weight:700}
+.wrap{max-width:1180px;margin:0 auto;padding:0 36px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor;opacity:.8}
+section{position:relative}
+
+/* ================= NAV ================= */
+.nav{position:sticky;top:0;z-index:200;background:rgba(10,10,10,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:0 auto;padding:14px 32px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand .logo{width:42px;height:42px;background:url("popcorn_logo.png") center/contain no-repeat;filter:brightness(0) invert(1)}
+.brand .bt{font-size:12px;line-height:1.25}
+.brand .bt b{display:block;font-weight:800;letter-spacing:.02em}
+.brand .bt span{color:var(--g500);font-weight:500}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-size:13px;color:var(--g300);font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--cyan)}
+.nav-cta{padding:10px 20px;border-radius:999px;background:var(--cyan);color:var(--black);font-size:12.5px;font-weight:700;letter-spacing:.01em}
+@media(max-width:980px){.nav-links{display:none}}
+
+/* ================= HERO (Popcorn) ================= */
+.hero{position:relative;overflow:hidden;background:radial-gradient(1200px 700px at 78% 18%,rgba(107,33,214,.55),transparent 60%),linear-gradient(180deg,#160a2e 0%,var(--black) 100%);padding:120px 0 110px}
+.hero .grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(900px 600px at 70% 30%,#000,transparent 75%)}
+.hero .rings{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:620px;height:620px;pointer-events:none;opacity:.9}
+.hero .rings span{position:absolute;border-radius:50%;border:1px solid rgba(94,234,212,.18);inset:0}
+.hero .rings span:nth-child(2){inset:90px;border-color:rgba(94,234,212,.22)}
+.hero .rings span:nth-child(3){inset:185px;border-color:rgba(94,234,212,.3)}
+.hero .rings .core{inset:auto;left:50%;top:50%;width:74px;height:74px;transform:translate(-50%,-50%);background:radial-gradient(circle,var(--cyan),rgba(94,234,212,0) 70%);border:none;filter:blur(.5px)}
+.hero-in{position:relative;z-index:2;max-width:880px}
+.hero .pill{display:inline-flex;align-items:center;gap:9px;padding:8px 16px;border-radius:999px;background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.28);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin-bottom:30px}
+.hero .pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+.hero h1{font-size:clamp(42px,6.6vw,88px);line-height:.98;letter-spacing:-.035em;margin-bottom:26px}
+.hero h1 .thin{font-weight:300;color:var(--g300)}
+.hero h1 .grad{background:linear-gradient(92deg,#fff 10%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:18.5px;line-height:1.62;color:rgba(255,255,255,.86);max-width:660px;margin-bottom:38px;font-weight:400}
+.hero .lead b{color:var(--white);font-weight:700}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;border:1px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-c{background:var(--cyan);color:var(--black)}
+.btn-g{background:transparent;border-color:rgba(255,255,255,.22);color:#fff}
+
+/* ================= META BAR ================= */
+.meta{background:linear-gradient(180deg,var(--purple) 0%,#3a1399 100%);border-top:1px solid rgba(255,255,255,.1)}
+.meta .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;padding:30px 36px}
+.meta .it .l{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:7px}
+.meta .it .v{font-size:14px;font-weight:600}
+@media(max-width:820px){.meta .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* ================= GENERIC SECTION SYSTEM ================= */
+.sec{padding:104px 0}
+.sec-dark{background:var(--black)}
+.sec-darker{background:var(--black-2);background-image:radial-gradient(circle at 16% 0%,rgba(107,33,214,.1),transparent 42%)}
+.sec-purple{background:linear-gradient(180deg,var(--purple-deep),var(--purple-soft))}
+.sec-light{background:var(--g100);color:var(--black)}
+.sec-light p{color:var(--g700)} .sec-light h2,.sec-light h3,.sec-light h4{color:var(--purple-deep)} .sec-light .eyebrow{color:var(--purple)}
+.s-head{max-width:760px;margin-bottom:54px}
+.s-head .eyebrow{color:var(--cyan);margin-bottom:20px}
+.s-head h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.03em;margin-bottom:18px}
+.s-head p{font-size:17px;line-height:1.62;color:var(--g300)}
+.s-num{font-size:12px;font-weight:700;color:var(--cyan);letter-spacing:.2em}
+
+/* ================= POPCORN: QUIÉNES SOMOS ================= */
+.who-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:54px;align-items:center}
+.who-grid p{font-size:16px;line-height:1.7;color:var(--g300);margin-bottom:18px}
+.who-grid p b{color:#fff;font-weight:700}
+.who-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:26px}
+.stat .n{font-size:38px;font-weight:800;letter-spacing:-.03em;background:linear-gradient(92deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.stat .t{font-size:13px;color:var(--g300);margin-top:10px;line-height:1.45}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.tri .who-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:26px}
+.tri .who-card .role{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
+.tri .who-card h4{font-size:17px;margin-bottom:8px}
+.tri .who-card p{font-size:13.5px;color:var(--g300);line-height:1.55}
+
+/* ================= POPCORN: MÉTODO ================= */
+.method{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:10px}
+.m-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px 24px;position:relative}
+.m-card .mn{font-size:13px;font-weight:700;color:var(--cyan);letter-spacing:.14em;margin-bottom:18px}
+.m-card h4{font-size:18px;margin-bottom:10px;line-height:1.2}
+.m-card p{font-size:13.5px;color:var(--g300);line-height:1.55}
+.belief{margin-top:46px;border-left:3px solid var(--cyan);padding:6px 0 6px 28px;max-width:880px}
+.belief p{font-size:clamp(20px,2.5vw,28px);font-weight:300;line-height:1.4;letter-spacing:-.01em;color:#fff}
+.belief p b{font-weight:700;color:var(--cyan)}
+
+/* ================= MECHE WORLD WRAPPER ================= */
+.meche{background:var(--m-bg);color:var(--white);position:relative}
+.meche .display{font-family:var(--display)}
+.meche .sec{padding:108px 0}
+.meche .s-head .eyebrow{color:var(--m-accent)}
+.meche .s-head h2{font-family:var(--display);font-weight:600}
+.meche .s-head p{color:var(--m-soft)}
+.meche .s-num{color:var(--m-accent)}
+.band-enter{background:linear-gradient(180deg,var(--black) 0%,var(--m-bg) 100%);padding:70px 0 0}
+.band-exit{background:linear-gradient(180deg,var(--m-bg) 0%,var(--purple-deep) 100%);height:120px}
+.shift-tag{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-size:13px;font-weight:500;letter-spacing:.04em;color:var(--m-soft);border:1px solid var(--m-line);border-radius:999px;padding:12px 22px;background:rgba(31,224,138,.05)}
+.shift-tag .dot{width:8px;height:8px;border-radius:50%;background:var(--m-accent);box-shadow:0 0 14px var(--m-accent)}
+.shift-wrap{text-align:center;max-width:820px;margin:0 auto;padding:48px 0 8px}
+.shift-wrap h3{font-family:var(--display);font-weight:300;font-size:clamp(22px,3vw,34px);line-height:1.34;margin-top:30px;letter-spacing:-.01em;color:#eafff3}
+.shift-wrap h3 b{font-weight:600;color:var(--m-accent)}
+
+/* MECHE cards / generic */
+.m-grid{display:grid;gap:18px}
+.m-grid.c4{grid-template-columns:repeat(4,1fr)} .m-grid.c3{grid-template-columns:repeat(3,1fr)} .m-grid.c2{grid-template-columns:repeat(2,1fr)}
+.mcard{background:var(--m-card);border:1px solid var(--m-line);border-radius:18px;padding:26px 24px}
+.mcard h4{font-family:var(--display);font-weight:600;font-size:18px;margin-bottom:10px;line-height:1.2}
+.mcard p{font-size:13.5px;color:var(--m-soft);line-height:1.56}
+.mcard .k{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--m-accent);margin-bottom:14px;display:block}
+@media(max-width:980px){.m-grid.c4{grid-template-columns:repeat(2,1fr)}.m-grid.c3{grid-template-columns:1fr}.method{grid-template-columns:repeat(2,1fr)}.who-grid{grid-template-columns:1fr}}
+
+/* DATA stats (diagnóstico) */
+.dstats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dstat{background:var(--m-card);border:1px solid var(--m-line);border-radius:18px;padding:28px 22px;text-align:left}
+.dstat .n{font-family:var(--display);font-size:42px;font-weight:600;color:var(--m-accent);line-height:1;letter-spacing:-.02em}
+.dstat .t{font-size:13px;color:var(--m-soft);margin-top:12px;line-height:1.5}
+.dnote{margin-top:18px;background:linear-gradient(92deg,rgba(0,114,65,.5),rgba(0,114,65,.15));border:1px solid var(--m-line);border-radius:16px;padding:22px 26px;font-size:15px;color:#eafff3;line-height:1.55}
+.dnote b{color:var(--m-accent);font-weight:700}
+@media(max-width:980px){.dstats{grid-template-columns:repeat(2,1fr)}}
+
+/* NAMING split */
+.naming{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--m-line);border-radius:22px;overflow:hidden}
+.naming .col{padding:44px 40px}
+.naming .before{background:rgba(255,255,255,.02)}
+.naming .after{background:linear-gradient(180deg,rgba(0,114,65,.22),rgba(31,224,138,.05))}
+.naming .tag{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px;display:inline-block}
+.naming .before .tag{color:var(--m-mut)} .naming .after .tag{color:var(--m-accent)}
+.naming .nm{font-family:var(--display);font-size:34px;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
+.naming .before .nm{color:rgba(229,255,242,.55)}
+.naming .desc{font-size:12.5px;color:var(--m-mut);letter-spacing:.04em;margin-bottom:26px}
+.naming ul{list-style:none;display:flex;flex-direction:column;gap:13px}
+.naming li{font-size:13.5px;line-height:1.5;padding-left:26px;position:relative;color:var(--m-soft)}
+.naming .before li::before{content:"—";position:absolute;left:0;color:var(--m-mut)}
+.naming .after li::before{content:"";position:absolute;left:2px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--m-accent);box-shadow:0 0 10px var(--m-accent)}
+@media(max-width:820px){.naming{grid-template-columns:1fr}}
+
+/* TIMELINE antes hoy mañana */
+.evol{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;margin-top:14px}
+.evol::before{content:"";position:absolute;top:42px;left:6%;right:6%;height:2px;background:linear-gradient(90deg,rgba(0,114,65,.4),var(--m-accent))}
+.ev{padding:0 22px;position:relative}
+.ev .dot{width:18px;height:18px;border-radius:50%;background:var(--m-bg);border:2px solid var(--m-green);position:relative;margin:34px auto 26px;z-index:2}
+.ev:last-child .dot{border-color:var(--m-accent);box-shadow:0 0 0 6px rgba(31,224,138,.12)}
+.ev .when{font-family:var(--display);text-align:center;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--m-accent);margin-bottom:16px}
+.ev .body{background:var(--m-card);border:1px solid var(--m-line);border-radius:18px;padding:24px 22px;min-height:178px}
+.ev .body h4{font-family:var(--display);font-weight:600;font-size:18px;margin-bottom:12px}
+.ev .body p{font-size:13px;color:var(--m-soft);line-height:1.55;margin-bottom:8px}
+.ev .body .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.ev .body .chips span{font-size:11px;color:#cfeede;background:rgba(31,224,138,.08);border:1px solid var(--m-line);border-radius:999px;padding:5px 11px}
+@media(max-width:820px){.evol{grid-template-columns:1fr}.evol::before{display:none}}
+
+/* POSITIONING map */
+.posmap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.posmap .map{position:relative;aspect-ratio:1/.84;border:1px solid var(--m-line);border-radius:20px;background:radial-gradient(circle at 70% 28%,rgba(31,224,138,.14),transparent 55%);overflow:hidden}
+.posmap .ax{position:absolute;background:rgba(120,224,170,.18)}
+.posmap .ax.x{left:8%;right:8%;top:50%;height:1px} .posmap .ax.y{top:8%;bottom:8%;left:50%;width:1px}
+.posmap .axl{position:absolute;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--m-mut);font-weight:600}
+.posmap .axl.t{top:14px;left:50%;transform:translateX(-50%)} .posmap .axl.b{bottom:14px;left:50%;transform:translateX(-50%)}
+.posmap .axl.l{left:14px;top:50%;transform:translateY(-50%) rotate(-90deg)} .posmap .axl.r{right:6px;top:50%;transform:translateY(-50%) rotate(90deg)}
+.posmap .pt{position:absolute;transform:translate(-50%,-50%);text-align:center}
+.posmap .pt .d{width:11px;height:11px;border-radius:50%;background:var(--m-mut);margin:0 auto 7px}
+.posmap .pt .lb{font-size:11px;color:var(--m-soft);white-space:nowrap;font-weight:500}
+.posmap .pt.me .d{width:18px;height:18px;background:var(--m-accent);box-shadow:0 0 0 7px rgba(31,224,138,.16),0 0 18px var(--m-accent)}
+.posmap .pt.me .lb{font-family:var(--display);font-size:15px;font-weight:700;color:#fff}
+.posmap .copy p{font-size:15.5px;color:var(--m-soft);line-height:1.7;margin-bottom:16px}
+.posmap .copy p b{color:#fff;font-weight:700}
+.refrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.refrow .yes,.refrow .no{font-size:12px;border-radius:999px;padding:7px 13px;font-weight:600}
+.refrow .yes{color:#04130c;background:var(--m-accent)} .refrow .no{color:var(--m-mut);border:1px solid var(--m-line)}
+@media(max-width:820px){.posmap{grid-template-columns:1fr}}
+
+/* PURPOSE / VISION big statements */
+.bigstate{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.bs{border:1px solid var(--m-line);border-radius:22px;padding:42px;background:var(--m-card)}
+.bs.v{background:linear-gradient(160deg,rgba(0,114,65,.4),rgba(10,36,23,.6))}
+.bs .k{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--m-accent);margin-bottom:18px}
+.bs h3{font-family:var(--display);font-weight:300;font-size:clamp(22px,2.6vw,30px);line-height:1.28;letter-spacing:-.01em;color:#eafff3}
+.bs h3 b{font-weight:600;color:#fff}
+@media(max-width:820px){.bigstate{grid-template-columns:1fr}}
+
+/* PERSONALITY */
+.pers{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:start}
+.pers .yes-list,.pers .no-list{display:flex;flex-wrap:wrap;gap:11px}
+.pers .lbl{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;display:block}
+.pers .yes-wrap .lbl{color:var(--m-accent)} .pers .no-wrap .lbl{color:var(--m-mut)}
+.pers .no-wrap{margin-top:34px}
+.tagp{font-family:var(--display);font-size:16px;font-weight:500;border-radius:12px;padding:13px 18px}
+.pers .yes-list .tagp{background:rgba(31,224,138,.08);border:1px solid var(--m-line);color:#eafff3}
+.pers .no-list .tagp{background:transparent;border:1px solid rgba(255,255,255,.08);color:var(--m-mut);text-decoration:line-through;text-decoration-color:rgba(255,90,90,.5);font-weight:400;font-size:14px}
+.pers .side{background:var(--m-card);border:1px solid var(--m-line);border-radius:20px;padding:32px}
+.pers .side h4{font-family:var(--display);font-weight:600;font-size:19px;margin-bottom:16px}
+.pers .side p{font-size:14px;color:var(--m-soft);line-height:1.65}
+.pers .side p b{color:var(--m-accent)}
+@media(max-width:820px){.pers{grid-template-columns:1fr}}
+
+/* CONCEPT hero */
+.concept{background:linear-gradient(180deg,var(--m-bg) 0%,#02100a 100%);text-align:center;overflow:hidden}
+.concept .core-vis{width:230px;height:230px;margin:0 auto 44px;position:relative}
+.concept .quote{font-family:var(--display);font-weight:300;font-size:clamp(26px,4vw,46px);line-height:1.18;letter-spacing:-.02em;max-width:920px;margin:0 auto 28px;color:#eafff3}
+.concept .quote b{font-weight:600;color:var(--m-accent)}
+.concept .sub{font-size:16px;color:var(--m-soft);max-width:680px;margin:0 auto 10px;line-height:1.7}
+.concept .src{font-size:12px;color:var(--m-mut);letter-spacing:.05em;margin-top:18px}
+.concept-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px;text-align:left}
+@media(max-width:820px){.concept-pillars{grid-template-columns:1fr}}
+
+/* FOUNDATIONS principles */
+.princ{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pr{border:1px solid var(--m-line);border-radius:18px;padding:30px 26px;background:var(--m-card)}
+.pr .pn{font-family:var(--display);font-size:30px;font-weight:300;color:var(--m-accent);margin-bottom:16px}
+.pr h4{font-family:var(--display);font-weight:600;font-size:18px;margin-bottom:10px;line-height:1.25}
+.pr p{font-size:13.5px;color:var(--m-soft);line-height:1.6}
+.anchor-green{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:var(--m-card);border:1px solid var(--m-line);border-radius:20px;padding:30px 34px}
+.anchor-green .sw{width:120px;height:120px;border-radius:18px;background:var(--m-green);position:relative;flex-shrink:0;box-shadow:0 12px 40px rgba(0,114,65,.5)}
+.anchor-green .sw span{position:absolute;bottom:10px;left:12px;font-size:10px;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.8)}
+.anchor-green h4{font-family:var(--display);font-weight:600;font-size:20px;margin-bottom:10px}
+.anchor-green p{font-size:14.5px;color:var(--m-soft);line-height:1.65;max-width:620px}
+.anchor-green p b{color:var(--m-accent)}
+@media(max-width:980px){.princ{grid-template-columns:1fr}.anchor-green{grid-template-columns:1fr;text-align:center}.anchor-green .sw{margin:0 auto}}
+
+/* TERRITORIES showpiece */
+.terr{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tcard{border:1px solid var(--m-line);border-radius:20px;background:linear-gradient(180deg,var(--m-card),rgba(4,19,12,.4));padding:0;overflow:hidden;transition:border-color .25s,transform .25s}
+.tcard:hover{border-color:rgba(31,224,138,.5);transform:translateY(-4px)}
+.tcard .viz{height:184px;background:#03100a;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--m-line);position:relative;overflow:hidden}
+.tcard .viz svg{width:150px;height:150px}
+.tcard .body{padding:24px 24px 28px}
+.tcard .ti{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tcard .ti .no{font-family:var(--display);font-size:12px;font-weight:600;color:var(--m-accent);letter-spacing:.08em}
+.tcard h4{font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:-.01em}
+.tcard p{font-size:13px;color:var(--m-soft);line-height:1.58}
+.tcard .from{font-size:11px;color:var(--m-mut);margin-top:14px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.terr-note{margin-top:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:rgba(31,224,138,.06);border:1px solid var(--m-line);border-radius:16px;padding:20px 26px}
+.terr-note .pin{font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#04130c;background:var(--m-accent);border-radius:999px;padding:7px 14px;white-space:nowrap}
+.terr-note p{font-size:14.5px;color:#eafff3;line-height:1.55;margin:0}
+.terr-note p b{color:var(--m-accent)}
+@media(max-width:980px){.terr{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.terr{grid-template-columns:1fr}}
+
+/* LOGO + ARCHITECTURE */
+.logo-block{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.logo-stage{aspect-ratio:1/.82;border:1px solid var(--m-line);border-radius:22px;background:radial-gradient(circle at 50% 42%,rgba(0,114,65,.3),#03100a 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.logo-stage .mark{width:96px;height:96px}
+.logo-stage .wm{font-family:var(--display);font-weight:600;font-size:46px;letter-spacing:.14em;color:#fff}
+.logo-stage .ds{font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--m-accent);margin-top:-12px}
+.logo-block .copy p{font-size:15.5px;color:var(--m-soft);line-height:1.7;margin-bottom:16px}
+.logo-block .copy p b{color:#fff;font-weight:700}
+.arch{margin-top:18px}
+.arch-master{text-align:center;border:1px solid var(--m-accent);border-radius:16px;padding:18px;font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:.1em;background:rgba(31,224,138,.07);max-width:320px;margin:0 auto 4px}
+.arch-stem{width:1px;height:30px;background:var(--m-line);margin:0 auto}
+.arch-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.arch-sub{border:1px solid var(--m-line);border-radius:14px;padding:16px 12px;text-align:center;background:var(--m-card)}
+.arch-sub b{font-family:var(--display);font-weight:600;font-size:15px;display:block} .arch-sub span{font-size:11px;color:var(--m-mut)}
+@media(max-width:820px){.logo-block{grid-template-columns:1fr}.arch-row{grid-template-columns:1fr 1fr}}
+
+/* SYSTEM: palette + type */
+.syst{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.sw2{border-radius:14px;height:118px;position:relative;border:1px solid rgba(255,255,255,.06);display:flex;align-items:flex-end;padding:12px;overflow:hidden}
+.sw2 b{font-size:11px;font-weight:700;letter-spacing:.04em} .sw2 span{position:absolute;top:12px;left:12px;font-size:10px;opacity:.7;letter-spacing:.06em}
+.type-spec{border:1px solid var(--m-line);border-radius:18px;padding:30px;background:var(--m-card)}
+.type-spec .big{font-family:var(--display);font-size:64px;font-weight:600;line-height:.9;letter-spacing:-.02em}
+.type-spec .scale{font-family:var(--display);font-size:13px;letter-spacing:.3em;color:var(--m-accent);margin:14px 0 22px;text-transform:uppercase}
+.type-spec .row{display:flex;justify-content:space-between;border-top:1px solid var(--m-line);padding:11px 0;font-size:13px;color:var(--m-soft)}
+.type-spec .row b{font-weight:600;color:#fff}
+.subsec-h{font-family:var(--display);font-weight:600;font-size:20px;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.subsec-h .nn{font-size:12px;color:var(--m-accent);letter-spacing:.1em}
+@media(max-width:820px){.syst{grid-template-columns:1fr}.palette{grid-template-columns:repeat(3,1fr)}}
+
+/* APPLICATIONS */
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.app{border:1px solid var(--m-line);border-radius:18px;overflow:hidden;background:var(--m-card)}
+.app .canvas{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,rgba(0,114,65,.28),#03100a 72%);position:relative}
+.app .canvas.lite{background:#f4fff9}
+.app .canvas svg{width:64px;height:64px}
+.app .lb{padding:15px 16px;font-size:12.5px;color:var(--m-soft);border-top:1px solid var(--m-line)}
+.app .lb b{font-family:var(--display);font-weight:600;color:#fff;display:block;font-size:14px;margin-bottom:3px}
+.appfav{display:flex;gap:6px;align-items:center}
+@media(max-width:980px){.apps{grid-template-columns:repeat(2,1fr)}}
+
+/* WEB + SOCIAL mockups */
+.surf{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:stretch}
+.browser{border:1px solid var(--m-line);border-radius:16px;overflow:hidden;background:#03100a}
+.browser .bar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--m-line)}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.14);display:block}
+.browser .bar .url{margin-left:14px;font-size:11.5px;color:var(--m-mut);background:rgba(0,0,0,.3);border-radius:7px;padding:6px 14px}
+.browser .view{padding:46px 40px 52px;background:radial-gradient(900px 380px at 80% 0%,rgba(0,114,65,.3),transparent 60%)}
+.browser .view .nav2{display:flex;justify-content:space-between;align-items:center;margin-bottom:54px;font-family:var(--display);font-size:13px;color:var(--m-soft)}
+.browser .view .nav2 .lg{font-weight:600;font-size:18px;letter-spacing:.14em;color:#fff}
+.browser .view h3{font-family:var(--display);font-weight:600;font-size:clamp(26px,3.4vw,40px);line-height:1.06;letter-spacing:-.02em;margin-bottom:18px}
+.browser .view h3 b{color:var(--m-accent)}
+.browser .view p{font-size:14px;color:var(--m-soft);max-width:440px;line-height:1.6;margin-bottom:26px}
+.browser .view .cta2{display:inline-flex;font-family:var(--display);font-size:13px;font-weight:600;color:#04130c;background:var(--m-accent);border-radius:999px;padding:12px 24px}
+.phone{border:1px solid var(--m-line);border-radius:26px;background:#03100a;padding:14px;display:flex;flex-direction:column}
+.phone .pscr{flex:1;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#06251a,#03100a)}
+.phone .ph{display:flex;align-items:center;gap:10px;padding:16px 16px 12px}
+.phone .ph .av{width:38px;height:38px;border-radius:50%;background:var(--m-green);display:flex;align-items:center;justify-content:center}
+.phone .ph .av svg{width:22px;height:22px}
+.phone .ph b{font-family:var(--display);font-weight:600;font-size:14px}
+.phone .ph span{font-size:11px;color:var(--m-mut);display:block}
+.phone .post{margin:6px 14px 14px;border-radius:13px;aspect-ratio:1;background:radial-gradient(circle at 50% 45%,rgba(0,114,65,.5),#021008 72%);display:flex;align-items:center;justify-content:center;border:1px solid var(--m-line)}
+.phone .post svg{width:78px;height:78px}
+.phone .cap{font-size:11.5px;color:var(--m-soft);padding:0 16px 16px;line-height:1.5}
+.phone .cap b{color:var(--m-accent)}
+@media(max-width:820px){.surf{grid-template-columns:1fr}}
+
+/* BRAND BOOK strip */
+.book{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.bk{border:1px solid var(--m-line);border-radius:14px;padding:18px 14px;background:var(--m-card);font-size:12px;color:var(--m-soft)}
+.bk b{font-family:var(--display);font-weight:600;color:#fff;font-size:13px;display:block;margin-bottom:5px}
+@media(max-width:980px){.book{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.book{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== POPCORN: PHASES ===== */
+.phases{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:p}
+.ph-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:26px 20px;position:relative}
+.ph-card.hl{background:linear-gradient(180deg,rgba(94,234,212,.12),rgba(255,255,255,.02));border-color:rgba(94,234,212,.4)}
+.ph-card .pnum{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--cyan);margin-bottom:14px}
+.ph-card h4{font-size:16px;margin-bottom:10px;line-height:1.2}
+.ph-card p{font-size:12.5px;color:var(--g300);line-height:1.5;margin-bottom:14px}
+.ph-card .dl{font-size:11px;color:var(--cyan);font-weight:600;letter-spacing:.04em}
+.ph-card ul{list-style:none;margin-top:8px}
+.ph-card li{font-size:11.5px;color:var(--g300);padding-left:14px;position:relative;margin-bottom:6px;line-height:1.4}
+.ph-card li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--cyan)}
+@media(max-width:980px){.phases{grid-template-columns:repeat(2,1fr)}}
+
+/* WHY POPCORN */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why .w{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:30px 26px}
+.why .w .ic{width:46px;height:46px;border-radius:12px;background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.3);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin-bottom:18px}
+.why .w h4{font-size:18px;margin-bottom:10px}
+.why .w p{font-size:13.5px;color:var(--g300);line-height:1.6}
+@media(max-width:820px){.why{grid-template-columns:1fr}}
+
+/* CLOSE */
+.close{background:radial-gradient(900px 600px at 30% 20%,rgba(107,33,214,.55),transparent 60%),linear-gradient(180deg,var(--purple-deep),var(--black));text-align:center;padding:120px 0}
+.close h2{font-size:clamp(34px,5vw,64px);letter-spacing:-.03em;margin-bottom:24px;line-height:1.02}
+.close h2 .grad{background:linear-gradient(92deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.close p{font-size:18px;color:rgba(255,255,255,.85);max-width:620px;margin:0 auto 40px;line-height:1.65}
+.close .note{margin-top:34px;font-size:13px;color:var(--g500);letter-spacing:.04em}
+.foot{background:var(--black);border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot .brand .logo{width:34px;height:34px}
+.foot .meta-f{font-size:12px;color:var(--g500);text-align:right;line-height:1.7}
+.foot .meta-f b{color:var(--g300)}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-in">
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="bt"><b>Popcorn</b><span>Marketing · Comunicación · Branding</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#evolucion">Evolución</a>
+      <a href="#territorio">Territorio</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#sistema">Sistema visual</a>
+      <a href="#plan">Plan</a>
+    </div>
+    <a href="#cierre" class="nav-cta">Avancemos juntos</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="grid-bg"></div>
+  <div class="rings"><span></span><span></span><span></span><span class="core"></span></div>
+  <div class="wrap hero-in">
+    <span class="pill">Propuesta estratégica de rebranding</span>
+    <h1><span class="thin">De</span> Mercado Cheque<br><span class="thin">a</span> <span class="grad">MECHE.</span></h1>
+    <p class="lead">No es un cambio de logo. Es el momento en que una empresa deja de nombrar un producto y empieza a nombrar <b>la infraestructura donde circula el capital.</b> Esta es nuestra lectura del negocio, del problema de marca y del camino para construir <b>The Capital Network.</b></p>
+    <div class="hero-cta">
+      <a href="#diagnostico" class="btn btn-c">Ver el diagnóstico ↓</a>
+      <a href="#concepto" class="btn btn-g">El concepto de marca</a>
+    </div>
+  </div>
+</header>
+
+<!-- META BAR -->
+<div class="meta">
+  <div class="wrap">
+    <div class="it"><div class="l">Cliente</div><div class="v">Mercado Cheque → MECHE</div></div>
+    <div class="it"><div class="l">Proyecto</div><div class="v">Rebranding integral</div></div>
+    <div class="it"><div class="l">Alcance</div><div class="v">Estrategia + Identidad + Lanzamiento</div></div>
+    <div class="it"><div class="l">Preparado por</div><div class="v">Popcorn</div></div>
+    <div class="it"><div class="l">Documento</div><div class="v">Visión estratégica · v1</div></div>
+  </div>
+</div>
+
+<!-- ===================== 01 QUIÉNES SOMOS ===================== -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">01 · Quiénes somos</div>
+      <h2>Una agencia que piensa el negocio antes que la estética.</h2>
+      <p>Popcorn es el equipo de marketing, comunicación y branding que acompaña a empresas de salud, industria/B2B y tecnología en sus decisiones más importantes de marca. No entregamos piezas: acompañamos procesos.</p>
+    </div>
+    <div class="who-grid">
+      <div>
+        <p>Trabajamos donde el marketing se cruza con la estrategia de negocio. Auditamos, diagnosticamos y construimos <b>marcas que sostienen una ambición</b>, no que la decoran.</p>
+        <p>En proyectos como el de MECHE, ese cruce es todo: una identidad equivocada puede frenar una expansión; una identidad correcta puede <b>licenciar diez años de crecimiento.</b> Por eso abordamos el rebranding como un proyecto de transformación empresarial.</p>
+        <div class="tri">
+          <div class="who-card"><div class="role">Estrategia</div><h4>Visión de marca</h4><p>Posicionamiento, propósito, arquitectura y plataforma marcaria.</p></div>
+          <div class="who-card"><div class="role">Creatividad</div><h4>Identidad y sistema</h4><p>Concepto, isologo, sistema gráfico, tipografía y aplicaciones.</p></div>
+          <div class="who-card"><div class="role">Implementación</div><h4>Lanzamiento</h4><p>Web, redes, comunicación institucional y gestión del cambio.</p></div>
+        </div>
+      </div>
+      <div class="who-stats">
+        <div class="stat"><div class="n">360°</div><div class="t">Mirada integral: negocio, marca, comunicación y digital.</div></div>
+        <div class="stat"><div class="n">B2B</div><div class="t">Especialistas en marcas institucionales y de servicios complejos.</div></div>
+        <div class="stat"><div class="n">+15</div><div class="t">Disciplinas trabajando en paralelo sobre cada proyecto.</div></div>
+        <div class="stat"><div class="n">1</div><div class="t">Equipo responsable de extremo a extremo. Sin tercerizar la estrategia.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 02 CÓMO ENTENDEMOS UN REBRANDING ===================== -->
+<section class="sec sec-darker">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">02 · Nuestra forma de entender un rebranding</div>
+      <h2>Un rebranding no empieza en el logo. Empieza en el negocio.</h2>
+      <p>Antes de dibujar una sola línea, recorremos cuatro capas. Cada decisión visual que viene después responde a una de ellas.</p>
+    </div>
+    <div class="method">
+      <div class="m-card"><div class="mn">A</div><h4>Negocio</h4><p>Qué vende hoy, qué venderá mañana y qué actores conecta. La marca debe representar el negocio futuro, no el pasado.</p></div>
+      <div class="m-card"><div class="mn">B</div><h4>Categoría</h4><p>Cómo se la lee el mercado. A veces el rebranding no cambia de marca: cambia de categoría.</p></div>
+      <div class="m-card"><div class="mn">C</div><h4>Significado</h4><p>Qué promete, qué activa y qué evita. El concepto antes que la forma.</p></div>
+      <div class="m-card"><div class="mn">D</div><h4>Sistema</h4><p>Cómo vive en una app, un favicon, un sello y diez años de productos nuevos. La forma al servicio de la escala.</p></div>
+    </div>
+    <div class="belief">
+      <p>Popcorn no diseña logos. <b>Acompaña procesos de transformación de marca.</b> Lo que viene a continuación no es una propuesta gráfica: es una lectura estratégica de hacia dónde va MECHE.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENTER MECHE WORLD ================= -->
+<div class="band-enter">
+  <div class="wrap shift-wrap">
+    <span class="shift-tag"><span class="dot"></span>Entramos al mundo MECHE</span>
+    <h3>A partir de acá dejamos la identidad de Popcorn y empezamos a pensar en verde. <b>Porque ya vemos su marca futura</b> — y queremos mostrársela.</h3>
+  </div>
+</div>
+
+<div class="meche">
+
+<!-- ===================== 03 DIAGNÓSTICO ===================== -->
+<section class="sec" id="diagnostico">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">03 · Lo que detectamos del negocio</div>
+      <h2 class="display">Ustedes ya no son lo que su marca dice que son.</h2>
+      <p>Mercado Cheque nació para resolver un problema concreto y argentino: el acceso al financiamiento PyME. Pero los datos que ustedes mismos validaron muestran que ese problema es global, estructural y enorme. Y que ya lo están atacando como infraestructura, no como producto.</p>
+    </div>
+    <div class="dstats">
+      <div class="dstat"><div class="n">67%</div><div class="t">de las PyMEs no accede al financiamiento. Son el 99% de las empresas y el 64% del empleo formal.</div></div>
+      <div class="dstat"><div class="n">90%</div><div class="t">de todas las empresas del mundo son PyMEs. Generan el 50% del empleo global.</div></div>
+      <div class="dstat"><div class="n">&lt;20%</div><div class="t">accede al crédito formal. El capital existe; lo que falta es la infraestructura que lo conecte.</div></div>
+      <div class="dstat"><div class="n">USD 5,7B</div><div class="t">de brecha de financiamiento PyME solo en mercados emergentes (IFC / World Bank).</div></div>
+    </div>
+    <div class="dnote">El problema no era argentino. <b>Era el patrón.</b> Y quien construya la infraestructura que conecta a quien necesita capital con quien quiere invertirlo, define cómo fluye el capital en la próxima década. Esa es la empresa que ustedes están construyendo — pero no es la empresa que su marca comunica.</div>
+  </div>
+</section>
+
+<!-- ===================== 04 EL PROBLEMA DE MARCA ===================== -->
+<section class="sec sec-darker" style="background:var(--m-bg2)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">04 · El verdadero problema</div>
+      <h2 class="display">"Mercado Cheque" nombra un producto. Ustedes ya son un ecosistema.</h2>
+      <p>El nombre describe lo que vendían el primer día: descontar cheques en un mercado. Hoy conectan empresas, inversores y partners a través de echeqs, factoring, leasing, mercado de capitales — y lo que venga. La marca quedó tres pasos atrás del negocio.</p>
+    </div>
+    <div class="naming">
+      <div class="col before">
+        <span class="tag">La marca actual</span>
+        <div class="nm">Mercado Cheque</div>
+        <div class="desc">Isologo: una casa cerrada · Tagline: "Mejor Simple"</div>
+        <ul>
+          <li>Nombra un <b>instrumento</b> (el cheque), justo cuando dejaron de ser solo eso.</li>
+          <li>El símbolo —una casa de líneas geométricas— evoca contención, paredes, límites. Lo opuesto a una red que se expande.</li>
+          <li>Ancla a <b>Argentina</b> y a "fintech local de descuento".</li>
+          <li>Estética fintech genérica: el techo de una empresa, no la infraestructura del capital.</li>
+        </ul>
+      </div>
+      <div class="col after">
+        <span class="tag">Lo que el negocio pide</span>
+        <div class="nm">Una red, no una casa</div>
+        <div class="desc">Un nombre y un símbolo que no pongan techo</div>
+        <ul>
+          <li>No es un banco. No es una billetera. No es solo una fintech. <b>Es el mercado.</b></li>
+          <li>Una infraestructura modular, escalable, aplicable a cualquier instrumento financiero.</li>
+          <li>Pensada para operar en múltiples mercados y contextos — sin un nombre que la limite a uno.</li>
+          <li>El activo principal deja de ser el dinero. <b>Pasa a ser la relación.</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 05 EVOLUCIÓN HACIA MECHE ===================== -->
+<section class="sec" id="evolucion">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">05 · La evolución hacia MECHE</div>
+      <h2 class="display">El nombre no hay que inventarlo. El mercado ya lo eligió.</h2>
+      <p>MECHE nace de <b style="color:var(--m-accent)">ME</b>rcado <b style="color:var(--m-accent)">CHE</b>que: la abreviatura que sus propios clientes usan hace años. No es un nombre nuevo. Es un nombre ya apropiado — solo falta hacerlo marca. Y darle el descriptor que lo proyecta: <b style="color:var(--m-accent)">The Capital Network.</b></p>
+    </div>
+    <div class="evol">
+      <div class="ev">
+        <div class="dot"></div><div class="when">Antes</div>
+        <div class="body"><h4>Mercado de cheques</h4><p>Una plataforma de descuento de cheques para PyMEs argentinas. Un producto, un instrumento, un país.</p><div class="chips"><span>Cheque</span><span>Argentina</span><span>Fintech</span></div></div>
+      </div>
+      <div class="ev">
+        <div class="dot"></div><div class="when">Hoy</div>
+        <div class="body"><h4>Marketplace financiero</h4><p>Exchange, hub y ecosistema. Conecta empresas, inversores y partners con múltiples instrumentos, en tiempo real.</p><div class="chips"><span>Echeq</span><span>Factoring</span><span>Leasing</span><span>Mercado de capitales</span></div></div>
+      </div>
+      <div class="ev">
+        <div class="dot"></div><div class="when">Mañana</div>
+        <div class="body"><h4>Infraestructura global de capital</h4><p>Cualquier actor, cualquier instrumento, cualquier tecnología — incluida la que todavía no se inventó. The Capital Network.</p><div class="chips"><span>Cripto</span><span>Global</span><span>Multi-instrumento</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 06 OPORTUNIDAD ESTRATÉGICA ===================== -->
+<section class="sec sec-darker" style="background:linear-gradient(180deg,var(--m-bg) ,#02100a)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">06 · La oportunidad estratégica</div>
+      <h2 class="display">No están cambiando de marca. Están creando una categoría.</h2>
+      <p>El verdadero salto está en una palabra de tres letras: <b style="color:var(--m-accent)">"The".</b></p>
+    </div>
+    <div class="m-grid c3">
+      <div class="mcard"><span class="k">El artículo que cambia todo</span><h4>"The" no es un adorno</h4><p>En inglés, anteponer "The" a un nombre propio es una declaración de unicidad y autoridad. The New York Times no es un diario más: es el diario. The Capital Network no es una red más: es la red.</p></div>
+      <div class="mcard"><span class="k">De producto a estándar</span><h4>De fintech a infraestructura</h4><p>Dejan de competir como "una fintech de cheques" y pasan a posicionarse como la capa sobre la que opera el capital. No se compite con un producto: se define un estándar.</p></div>
+      <div class="mcard"><span class="k">La marca como licencia</span><h4>Un recipiente para 10 años</h4><p>La identidad correcta no encierra el presente: habilita el futuro. Una marca que aguanta cualquier instrumento, mercado o tecnología que el negocio sume en la próxima década.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 07 POSICIONAMIENTO ===================== -->
+<section class="sec" id="territorio">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">07 · Diagnóstico de posicionamiento</div>
+      <h2 class="display">Hay que pensar más cerca de Stripe que de un banco.</h2>
+      <p>El territorio de MECHE no está en el cuadrante de las fintech locales ni en el de la banca tradicional. Está en el de las infraestructuras: las empresas que mueven el mundo sin que se las vea.</p>
+    </div>
+    <div class="posmap">
+      <div class="map">
+        <div class="ax x"></div><div class="ax y"></div>
+        <div class="axl t">Infraestructura</div><div class="axl b">Producto</div>
+        <div class="axl l">Global</div><div class="axl r">Local</div>
+        <div class="pt" style="left:78%;top:74%"><div class="d"></div><div class="lb">Banca tradicional</div></div>
+        <div class="pt" style="left:70%;top:40%"><div class="d"></div><div class="lb">Fintech genérica</div></div>
+        <div class="pt" style="left:30%;top:24%"><div class="d"></div><div class="lb">Stripe · Visa</div></div>
+        <div class="pt" style="left:22%;top:50%"><div class="d"></div><div class="lb">AWS · Bloomberg</div></div>
+        <div class="pt me" style="left:40%;top:32%"><div class="d"></div><div class="lb">MECHE</div></div>
+      </div>
+      <div class="copy">
+        <p>El logo de un banco proyecta una bóveda. El de MECHE tiene que proyectar <b>una red que ya está funcionando.</b> La autoridad no viene del peso institucional: viene de ser el lugar por donde todo pasa.</p>
+        <p>Por eso la referencia mental no son Galicia, Santander o BBVA. Son las marcas que se volvieron invisibles de tan presentes:</p>
+        <div class="refrow">
+          <span class="yes">Stripe</span><span class="yes">Visa</span><span class="yes">Mastercard</span><span class="yes">Bloomberg</span><span class="yes">AWS</span><span class="yes">Starlink</span>
+        </div>
+        <div class="refrow" style="margin-top:14px">
+          <span class="no">Banco Galicia</span><span class="no">Santander</span><span class="no">BBVA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 08 PROPÓSITO Y VISIÓN ===================== -->
+<section class="sec sec-darker" style="background:var(--m-bg2)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">08 · Territorio de marca</div>
+      <h2 class="display">Propósito y visión: lo que MECHE viene a cambiar.</h2>
+      <p>Toda la plataforma marcaria se ordena alrededor de una idea simple y poderosa, tomada de su propio manifiesto: el sistema financiero mira el pasado; MECHE mira el potencial.</p>
+    </div>
+    <div class="bigstate">
+      <div class="bs">
+        <div class="k">Propósito · La misión</div>
+        <h3>Que el acceso al capital dependa de <b>las relaciones y el potencial</b> de cada actor — no del instrumento, la tecnología o el sistema que históricamente decidió quién entra y quién no.</h3>
+      </div>
+      <div class="bs v">
+        <div class="k">Visión · El futuro</div>
+        <h3>Construir <b>la primera gran red global de capital.</b> Cuantos más participantes entran, más oportunidades aparecen, más conexiones se generan. MECHE crece porque <b>todos crecen.</b></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 09 PERSONALIDAD ===================== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">09 · Personalidad de marca</div>
+      <h2 class="display">Inteligente y humana. Nunca bancaria.</h2>
+      <p>La tensión que define la marca: tiene que sostener la autoridad de mover millones de dólares, sin la frialdad ni la solemnidad de la banca tradicional.</p>
+    </div>
+    <div class="pers">
+      <div>
+        <div class="yes-wrap"><span class="lbl">Debe sentirse</span>
+          <div class="yes-list">
+            <span class="tagp">Inteligente</span><span class="tagp">Tecnológica</span><span class="tagp">Global</span><span class="tagp">Elegante</span><span class="tagp">Moderna</span><span class="tagp">Confiable</span><span class="tagp">Institucional</span><span class="tagp">Escalable</span><span class="tagp">Ambiciosa</span><span class="tagp">Dinámica</span><span class="tagp">Humana</span>
+          </div>
+        </div>
+        <div class="no-wrap"><span class="lbl">Nunca debe sentirse</span>
+          <div class="no-list">
+            <span class="tagp">Bancaria</span><span class="tagp">Fría</span><span class="tagp">Conservadora</span><span class="tagp">Fintech genérica</span><span class="tagp">Local</span><span class="tagp">Antigua</span>
+          </div>
+        </div>
+      </div>
+      <div class="side">
+        <h4>El equilibrio difícil</h4>
+        <p>Una marca demasiado "tech" pierde la confianza que exige el dinero. Una demasiado "banco" traiciona la ambición global y la cercanía.</p>
+        <p style="margin-top:14px">MECHE vive en el punto medio exacto: la <b>autoridad</b> de una infraestructura crítica y la <b>cercanía</b> de quien no te pregunta quién sos antes de dejarte pasar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10 ARQUITECTURA CONCEPTUAL ===================== -->
+<section class="sec sec-darker" style="background:linear-gradient(180deg,var(--m-bg),#02100a)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">10 · Arquitectura conceptual</div>
+      <h2 class="display">La relación es el activo. El capital es lo que se mueve a través de ella.</h2>
+      <p>Esta frase de su manifiesto es, para nosotros, el núcleo de toda la marca. Cambia la pregunta del sistema financiero — y cambia lo que la identidad tiene que representar.</p>
+    </div>
+    <div class="m-grid c2">
+      <div class="mcard"><span class="k">El sistema tradicional pregunta</span><h4>¿Cuánto valés en números?</h4><p>Tu historial. Tu score. Tu balance de los últimos tres años. Una foto del pasado que decide tu futuro. Una marca de bóveda, de techo, de límite.</p></div>
+      <div class="mcard" style="background:linear-gradient(160deg,rgba(0,114,65,.35),var(--m-card))"><span class="k">MECHE pregunta</span><h4>¿Con quién podés conectar?</h4><p>Qué potencial tenés que todavía no aparece en ninguna planilla. Qué relación falta para que el capital que necesitás encuentre al capital que te está buscando. Una marca de red, de flujo, de umbral abierto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11 CONCEPTO CREATIVO ===================== -->
+<section class="sec concept" id="concepto">
+  <div class="wrap">
+    <div class="s-head" style="margin:0 auto 40px;text-align:center">
+      <div class="eyebrow" style="justify-content:center">11 · Concepto creativo</div>
+    </div>
+    <div class="core-vis">
+      <svg viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="115" cy="115" r="110" stroke="rgba(31,224,138,0.12)"/>
+        <circle cx="115" cy="115" r="78" stroke="rgba(31,224,138,0.18)"/>
+        <circle cx="115" cy="115" r="48" stroke="rgba(31,224,138,0.3)"/>
+        <g stroke="#1FE08A" stroke-width="1.4" opacity="0.85">
+          <line x1="115" y1="115" x2="193" y2="74"/><line x1="115" y1="115" x2="61" y2="40"/>
+          <line x1="115" y1="115" x2="40" y2="150"/><line x1="115" y1="115" x2="170" y2="185"/>
+          <line x1="115" y1="115" x2="200" y2="140"/>
+        </g>
+        <g fill="#1FE08A">
+          <circle cx="193" cy="74" r="5"/><circle cx="61" cy="40" r="5"/><circle cx="40" cy="150" r="5"/><circle cx="170" cy="185" r="5"/><circle cx="200" cy="140" r="4"/>
+        </g>
+        <circle cx="115" cy="115" r="16" fill="#007241"/>
+        <circle cx="115" cy="115" r="16" stroke="#1FE08A" stroke-width="1.5"/>
+        <circle cx="115" cy="115" r="6" fill="#1FE08A"/>
+      </svg>
+    </div>
+    <div class="quote">El logo de MECHE no muestra la red. <b>Muestra lo que la red hace.</b></div>
+    <p class="sub">Una identidad que no dibuja nodos y líneas, sino el comportamiento del sistema: cómo se expande, cómo conecta, cómo sostiene un núcleo de confianza mientras la energía circula hacia afuera. Capital en movimiento, con un centro que da orden.</p>
+    <p class="src">— Síntesis del trabajo conceptual interdisciplinario de MECHE (cartografía, biología, urbanismo, semiótica, filosofía)</p>
+    <div class="concept-pillars">
+      <div class="mcard"><span class="k">Núcleo</span><h4>Centro de confianza</h4><p>Un punto de lectura privilegiado que da orden y autoridad —legible incluso a 16px— sin convertirse en un centro que decide quién entra.</p></div>
+      <div class="mcard"><span class="k">Corriente</span><h4>Capital en movimiento</h4><p>La forma sugiere que el movimiento ya estaba pasando antes de que la miraras. No es el origen: es una fracción de segundo de una corriente continua.</p></div>
+      <div class="mcard"><span class="k">Expansión</span><h4>Red que no se cierra</h4><p>Crecimiento con fricción: se expande hacia donde hace falta, bordea obstáculos y nunca termina del todo. La red sigue más allá del encuadre.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 12 FUNDAMENTOS DEL SISTEMA VISUAL ===================== -->
+<section class="sec sec-darker" style="background:var(--m-bg2)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">12 · Fundamentos del nuevo sistema visual</div>
+      <h2 class="display">Tres reglas antes de la primera línea.</h2>
+      <p>El sistema visual no se construye sobre gustos, sino sobre tres principios que resuelven la tensión central: movimiento con estructura, energía con control.</p>
+    </div>
+    <div class="princ">
+      <div class="pr"><div class="pn">01</div><h4>Movimiento con centro</h4><p>Ni una red anárquica (proyecta desorden y nadie confía su capital al caos) ni una bóveda rígida. Jerarquía visual para que se entienda; sin jerarquía centralizada como mensaje.</p></div>
+      <div class="pr"><div class="pn">02</div><h4>Escapar del cliché fintech</h4><p>Prohibido: cheques, monedas, billetes, bancos, gráficos financieros, flechas de crecimiento, una "M" obvia. La identidad no debe oler a laboratorio ni a banco.</p></div>
+      <div class="pr"><div class="pn">03</div><h4>Funcionar a cualquier escala</h4><p>El símbolo vive como ícono de app, favicon, avatar y sello institucional. Y debe poder animarse: expandirse, conectarse, vibrar, generar ondas — sin perder reconocimiento.</p></div>
+    </div>
+    <div class="anchor-green">
+      <div class="sw"><span>HEX #007241</span></div>
+      <div>
+        <h4>El verde no se negocia. Es el ancla.</h4>
+        <p>En un rebranding tan radical —nombre, forma, tipografía, promesa— el riesgo es alienar a quien ya confía en ustedes. Por eso conservamos el <b>verde institucional</b> como único puente con la historia: le dice al cliente "seguimos siendo nosotros, evolucionamos". Toda la transformación geométrica puede ser radical, porque el color sostiene la confianza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 13 TERRITORIOS — SHOWPIECE ===================== -->
+<section class="sec" id="direcciones">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">13 · Direcciones del lenguaje gráfico</div>
+      <h2 class="display">Seis territorios para explorar. Una sola idea.</h2>
+      <p>No partimos de cero ni de clichés. Traducimos el comportamiento del ecosistema a seis rutas visuales distintas — cada una nacida de una disciplina ajena a las finanzas. Todas expresan lo mismo: una red que hace algo.</p>
+    </div>
+    <div class="terr">
+      <!-- 1 UMBRAL -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none"><rect x="35" y="20" width="80" height="110" rx="40" stroke="#1FE08A" stroke-width="2"/><rect x="52" y="42" width="46" height="88" rx="23" stroke="rgba(31,224,138,0.45)" stroke-width="1.6"/><line x1="75" y1="64" x2="75" y2="108" stroke="#1FE08A" stroke-width="2"/><circle cx="75" cy="64" r="4" fill="#1FE08A"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">01</span><h4>El umbral</h4></div><p>MECHE no es el capital: es el espacio neutral en el medio, la puerta por la que pasa el valor. El símbolo como un paso, no como un objeto.</p><div class="from">Desde · Arquitectura</div></div></div>
+      <!-- 2 ISÓCRONA -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none"><path d="M75 75 m-18 -10 a30 26 12 1 0 40 16 a34 40 -8 1 0 -40 -16" stroke="rgba(31,224,138,0.35)" stroke-width="1.4"/><path d="M75 75 m-34 -8 a48 44 16 1 0 70 20 a52 60 -10 1 0 -70 -20" stroke="rgba(31,224,138,0.55)" stroke-width="1.4"/><path d="M75 75 m-52 -4 a66 60 16 1 0 96 22" stroke="#1FE08A" stroke-width="1.6"/><circle cx="75" cy="75" r="5" fill="#1FE08A"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">02</span><h4>La isócrona</h4></div><p>Expansión con fricción. La red no crece en círculos perfectos: se desvía, bordea obstáculos del mercado y avanza donde el terreno la deja. Crecimiento inteligente.</p><div class="from">Desde · Cartografía</div></div></div>
+      <!-- 3 VENACIÓN -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none" stroke="#1FE08A"><path d="M75 130 L75 50" stroke-width="3"/><path d="M75 95 L45 65" stroke-width="2.2"/><path d="M75 95 L105 65" stroke-width="2.2"/><path d="M75 72 L52 50" stroke-width="1.5"/><path d="M75 72 L98 50" stroke-width="1.5"/><path d="M45 65 L30 50" stroke-width="1"/><path d="M105 65 L120 50" stroke-width="1"/><circle cx="75" cy="50" r="4" fill="#1FE08A"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">03</span><h4>La venación</h4></div><p>Como las venas de una hoja o los afluentes de un río: líneas gruesas en el centro que se ramifican y afinan en los bordes. Reconoce que algunos mueven más capital que otros.</p><div class="from">Desde · Biología</div></div></div>
+      <!-- 4 PULSO -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="14" fill="#007241"/><circle cx="75" cy="75" r="14" stroke="#1FE08A" stroke-width="1.5"/><circle cx="75" cy="75" r="30" stroke="rgba(31,224,138,0.6)" stroke-width="1.6"/><circle cx="75" cy="75" r="48" stroke="rgba(31,224,138,0.32)" stroke-width="1.4"/><circle cx="75" cy="75" r="66" stroke="rgba(31,224,138,0.15)" stroke-width="1.2"/><circle cx="75" cy="75" r="5" fill="#1FE08A"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">04</span><h4>El pulso</h4></div><p>El milisegundo exacto de una activación: una gota que cae en el agua, un latido. En vez de una red estática, la red viva. Hecho para animarse y respirar.</p><div class="from">Desde · Movimiento</div></div></div>
+      <!-- 5 GRADIENTE -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none"><defs><radialGradient id="gd" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1FE08A"/><stop offset="45%" stop-color="#0E9E5A"/><stop offset="100%" stop-color="#007241" stop-opacity="0"/></radialGradient></defs><circle cx="75" cy="75" r="60" fill="url(#gd)"/><circle cx="75" cy="75" r="7" fill="#04130c"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">05</span><h4>Gradiente de densidad</h4></div><p>Sin líneas ni bordes duros: el propio color, con distintas intensidades, arma la estructura. Se desvanece en los extremos, insinuando que la red sigue más allá de lo visible.</p><div class="from">Desde · Mapas de calor</div></div></div>
+      <!-- 6 FORMA ABIERTA -->
+      <div class="tcard"><div class="viz">
+        <svg viewBox="0 0 150 150" fill="none"><path d="M105 45 A40 40 0 1 0 110 95" stroke="#1FE08A" stroke-width="3" stroke-linecap="round"/><path d="M75 35 L75 75 L110 60" stroke="rgba(31,224,138,0.5)" stroke-width="2" stroke-linecap="round"/><circle cx="110" cy="60" r="4" fill="#1FE08A"/></svg>
+      </div><div class="body"><div class="ti"><span class="no">06</span><h4>La forma que no termina</h4></div><p>Una geometría fuerte a la que, a propósito, le falta un trazo: se escapa del encuadre. Puntos suspensivos visuales. El desafío: que se lea como decisión, nunca como error.</p><div class="from">Desde · Filosofía</div></div></div>
+    </div>
+    <div class="terr-note">
+      <span class="pin">Recomendación Popcorn</span>
+      <p>Para una infraestructura B2B que necesita autoridad, legibilidad a 16px y capacidad de animación, proponemos liderar con <b>El Pulso</b> como núcleo del isologo, y usar el <b>Gradiente de densidad</b> como textura del sistema. Núcleo legible + corriente viva. Lo definimos juntos en la etapa de concepto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 14 LOGOTIPO + ARQUITECTURA ===================== -->
+<section class="sec sec-darker" style="background:var(--m-bg2)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">14 · Rediseño del logotipo y arquitectura de marca</div>
+      <h2 class="display">Un isologo paraguas. Para hoy y para todo lo que viene.</h2>
+      <p>El nombre "MECHE" tiene una informalidad natural y cercana — una ventaja. El logotipo debe contrarrestarla con elegancia y sofisticación, para sostener la autoridad de "The Capital Network". Y el símbolo debe funcionar como marca paraguas de todas las divisiones, actuales y futuras.</p>
+    </div>
+    <div class="logo-block">
+      <div class="logo-stage">
+        <div class="mark"><svg viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="44" stroke="rgba(31,224,138,0.2)"/><circle cx="48" cy="48" r="28" stroke="rgba(31,224,138,0.4)"/><g stroke="#1FE08A" stroke-width="1.6"><line x1="48" y1="48" x2="86" y2="30"/><line x1="48" y1="48" x2="20" y2="20"/><line x1="48" y1="48" x2="18" y2="68"/><line x1="48" y1="48" x2="78" y2="78"/></g><g fill="#1FE08A"><circle cx="86" cy="30" r="3.5"/><circle cx="20" cy="20" r="3.5"/><circle cx="18" cy="68" r="3.5"/><circle cx="78" cy="78" r="3.5"/></g><circle cx="48" cy="48" r="9" fill="#007241" stroke="#1FE08A" stroke-width="1.4"/></svg></div>
+        <div>
+          <div class="wm">MECHE</div>
+          <div class="ds">The Capital Network</div>
+        </div>
+      </div>
+      <div class="copy">
+        <p><b>Logotipo:</b> tipografía geométrica, espaciada y precisa. Concreto, elegante, sofisticado — que eleve "MECHE" del apodo a la marca institucional.</p>
+        <p><b>Isologo:</b> el símbolo del núcleo + corriente, capaz de vivir solo, junto a MECHE o junto al descriptor completo.</p>
+        <p><b>Arquitectura de marca:</b> un masterbrand que cobija cada vertical sin fragmentar la identidad. La red no se cierra — y la marca tampoco.</p>
+        <div class="arch">
+          <div class="arch-master">MECHE</div>
+          <div class="arch-stem"></div>
+          <div class="arch-row">
+            <div class="arch-sub"><b>MECHE Pay</b><span>Pagos</span></div>
+            <div class="arch-sub"><b>MECHE News</b><span>Contenido</span></div>
+            <div class="arch-sub"><b>MECHE Capital</b><span>Inversión</span></div>
+            <div class="arch-sub"><b>+ futuro</b><span>Lo que venga</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 15 SISTEMA: PALETA + TIPOGRAFÍA ===================== -->
+<section class="sec" id="sistema">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">15 · Sistema gráfico, cromático y tipográfico</div>
+      <h2 class="display">Pocos elementos. Aplicados con disciplina.</h2>
+      <p>Un sistema premium no se construye con muchos recursos, sino con pocos usados con rigor: un verde con historia, un acento de energía, negros profundos y una tipografía que respira.</p>
+    </div>
+    <div class="syst">
+      <div>
+        <div class="subsec-h"><span class="nn">15.1</span> Paleta cromática</div>
+        <div class="palette">
+          <div class="sw2" style="background:#007241;color:#fff"><span>#007241</span><b>Verde ancla</b></div>
+          <div class="sw2" style="background:#0E9E5A;color:#fff"><span>#0E9E5A</span><b>Verde activo</b></div>
+          <div class="sw2" style="background:#1FE08A;color:#04130c"><span>#1FE08A</span><b>Energía</b></div>
+          <div class="sw2" style="background:#04130C;color:#fff"><span>#04130C</span><b>Negro MECHE</b></div>
+          <div class="sw2" style="background:#F4FFF9;color:#04130c"><span>#F4FFF9</span><b>Blanco</b></div>
+        </div>
+        <p style="font-size:13.5px;color:var(--m-soft);line-height:1.6;margin-top:18px">El verde ancla preserva la confianza. El acento de energía —reservado, nunca dominante— representa el capital en movimiento. El resto es aire: negro profundo y blanco para dejar respirar el sistema.</p>
+      </div>
+      <div>
+        <div class="subsec-h"><span class="nn">15.2</span> Sistema tipográfico</div>
+        <div class="type-spec">
+          <div class="big">Aa</div>
+          <div class="scale">Grotesque geométrica · sin cursivas</div>
+          <div class="row"><span>Display / títulos</span><b>Space Grotesk · 600</b></div>
+          <div class="row"><span>Texto / cuerpo</span><b>Inter · 400–500</b></div>
+          <div class="row"><span>Datos / etiquetas</span><b>Mono-spacing · 0.2em</b></div>
+          <div class="row"><span>Acentos</span><b>Color + peso, nunca itálica</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 16 APLICACIONES ===================== -->
+<section class="sec sec-darker" style="background:var(--m-bg2)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">16 · Aplicaciones</div>
+      <h2 class="display">Un símbolo que vive en todos lados — y se reconoce en cualquiera.</h2>
+      <p>La prueba de fuego de una infraestructura: el mismo signo funciona como ícono de app en un celular, como favicon de 16px, como avatar de redes y como sello institucional en un documento.</p>
+    </div>
+    <div class="apps">
+      <div class="app"><div class="canvas"><svg viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="16" fill="#007241"/><g stroke="#1FE08A" stroke-width="1.4"><line x1="32" y1="32" x2="50" y2="22"/><line x1="32" y1="32" x2="16" y2="18"/><line x1="32" y1="32" x2="16" y2="46"/></g><g fill="#1FE08A"><circle cx="50" cy="22" r="2.6"/><circle cx="16" cy="18" r="2.6"/><circle cx="16" cy="46" r="2.6"/></g><circle cx="32" cy="32" r="5.5" fill="#fff"/></svg></div><div class="lb"><b>Ícono de app</b>El núcleo, sólido sobre verde ancla.</div></div>
+      <div class="app"><div class="canvas lite"><div class="appfav"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" fill="#007241"/><circle cx="16" cy="16" r="3" fill="#1FE08A"/><g stroke="#1FE08A" stroke-width="1"><line x1="16" y1="16" x2="26" y2="11"/><line x1="16" y1="16" x2="8" y2="9"/></g></svg><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7.5" fill="#007241"/><circle cx="8" cy="8" r="2" fill="#1FE08A"/></svg></div></div><div class="lb"><b>Favicon · 16px</b>Reconocible incluso reducido al mínimo.</div></div>
+      <div class="app"><div class="canvas"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="#1FE08A" stroke-width="1.4"/><circle cx="32" cy="32" r="18" stroke="rgba(31,224,138,0.4)"/><circle cx="32" cy="32" r="6" fill="#1FE08A"/><circle cx="32" cy="32" r="14" fill="none" stroke="#007241" stroke-width="2"/></svg></div><div class="lb"><b>Avatar de redes</b>Versión circular, lista para perfiles.</div></div>
+      <div class="app"><div class="canvas lite"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="26" stroke="#007241" stroke-width="1.4"/><text x="32" y="30" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600" fill="#007241" letter-spacing="1">MECHE</text><text x="32" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="4.5" fill="#0E9E5A" letter-spacing="1.5">THE CAPITAL NETWORK</text></svg></div><div class="lb"><b>Sello institucional</b>Autoridad para documentos y contratos.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 17 WEBSITE + REDES ===================== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">17 · Website y redes sociales</div>
+      <h2 class="display">La marca, viviendo.</h2>
+      <p>El nuevo sitio y el rediseño de redes no son entregables sueltos: son los primeros lugares donde el mercado va a sentir el cambio. Un anticipo de dirección, no el diseño final.</p>
+    </div>
+    <div class="surf">
+      <div class="browser">
+        <div class="bar"><i></i><i></i><i></i><span class="url">meche.network</span></div>
+        <div class="view">
+          <div class="nav2"><span class="lg">MECHE</span><span>Empresas · Inversores · Partners · Acceder</span></div>
+          <h3>El capital encuentra<br>a quien lo necesita.<br><b>Sin pedir permiso.</b></h3>
+          <p>The Capital Network. La infraestructura que conecta empresas, inversores y partners en una sola red que no se cierra.</p>
+          <span class="cta2">Entrar a la red →</span>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="pscr">
+          <div class="ph"><div class="av"><svg viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="3" fill="#1FE08A"/><g stroke="#1FE08A" stroke-width="0.9"><line x1="11" y1="11" x2="18" y2="7"/><line x1="11" y1="11" x2="5" y2="6"/></g></svg></div><div><b>meche_network</b><span>The Capital Network</span></div></div>
+          <div class="post"><svg viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="14" fill="#007241"/><circle cx="75" cy="75" r="30" stroke="rgba(31,224,138,0.6)" stroke-width="1.6"/><circle cx="75" cy="75" r="48" stroke="rgba(31,224,138,0.3)" stroke-width="1.4"/><circle cx="75" cy="75" r="5" fill="#1FE08A"/></svg></div>
+          <div class="cap"><b>No vendemos financiamiento.</b> Conectamos partes. → Hilo sobre por qué la relación es el nuevo activo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 18 BRAND BOOK ===================== -->
+<section class="sec sec-darker" style="background:linear-gradient(180deg,var(--m-bg),#02100a)">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">18 · Brand book</div>
+      <h2 class="display">Todo el sistema, documentado para que escale sin perderse.</h2>
+      <p>El manual de marca es lo que permite que MECHE crezca, sume gente y abra mercados sin que la identidad se diluya. La red se expande; las reglas la mantienen reconocible.</p>
+    </div>
+    <div class="book">
+      <div class="bk"><b>Concepto</b>Idea de marca, propósito, visión, manifiesto.</div>
+      <div class="bk"><b>Isologo</b>Construcción, área de respeto, versiones, usos correctos e incorrectos.</div>
+      <div class="bk"><b>Color</b>Paleta, proporciones, contraste y accesibilidad.</div>
+      <div class="bk"><b>Tipografía</b>Familias, jerarquías y escala tipográfica.</div>
+      <div class="bk"><b>Sistema gráfico</b>Texturas, grilla, motion y recursos.</div>
+      <div class="bk"><b>Aplicaciones</b>Digital, papelería, app, redes y arquitectura de marca.</div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /meche -->
+<div class="band-exit"></div>
+
+<!-- ===================== 19 ETAPAS DEL PROYECTO ===================== -->
+<section class="sec sec-purple" id="plan">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow" style="color:var(--cyan)">19 · Etapas del proyecto</div>
+      <h2 style="color:#fff">Cómo lo construimos, juntos.</h2>
+      <p style="color:rgba(255,255,255,.82)">Un rebranding integral de esta ambición se trabaja por etapas, con validación en cada una. Acompañamos el proceso de extremo a extremo — y gestionamos el cambio, no solo el diseño.</p>
+    </div>
+    <div class="phases">
+      <div class="ph-card"><div class="pnum">Fase 01</div><h4>Inmersión</h4><p>Entender negocio, mercado y audiencias en profundidad.</p><ul><li>Entrevistas y workshops</li><li>Auditoría de marca actual</li><li>Mapa de actores</li></ul></div>
+      <div class="ph-card"><div class="pnum">Fase 02</div><h4>Estrategia</h4><p>La plataforma marcaria que ordena todo lo demás.</p><ul><li>Posicionamiento</li><li>Propósito y visión</li><li>Personalidad y arquitectura</li></ul></div>
+      <div class="ph-card hl"><div class="pnum">Fase 03</div><h4>Concepto</h4><p>La gran idea creativa y la dirección visual elegida.</p><ul><li>Concepto de marca</li><li>Territorio definido</li><li>Storytelling</li></ul></div>
+      <div class="ph-card"><div class="pnum">Fase 04</div><h4>Sistema</h4><p>Identidad completa y manual de marca.</p><ul><li>Isologo y sistema gráfico</li><li>Paleta y tipografía</li><li>Brand book</li></ul></div>
+      <div class="ph-card"><div class="pnum">Fase 05</div><h4>Lanzamiento</h4><p>La marca, en el mundo. Web, redes y gestión del cambio.</p><ul><li>Web y redes</li><li>Comunicación institucional</li><li>Plan de implementación</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 20 POR QUÉ POPCORN ===================== -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">20 · Por qué Popcorn</div>
+      <h2>No diseñamos una marca. Acompañamos una transformación.</h2>
+      <p>La diferencia entre una agencia que entrega un logo y un socio que entiende que están creando una categoría.</p>
+    </div>
+    <div class="why">
+      <div class="w"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/></svg></div><h4>Estrategia primero</h4><p>Cada decisión visual responde a una necesidad del negocio. Llegamos a esta propuesta con un diagnóstico, no con una plantilla.</p></div>
+      <div class="w"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div><h4>Mirada de categoría</h4><p>Entendemos la diferencia entre vender una fintech y construir una infraestructura. Pensamos MECHE más cerca de Stripe que de un banco.</p></div>
+      <div class="w"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div><h4>De extremo a extremo</h4><p>De la estrategia al lanzamiento, con un solo equipo responsable. Gestionamos el cambio, no solo entregamos archivos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 21 CIERRE ===================== -->
+<section class="close" id="cierre">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--cyan);justify-content:center;margin-bottom:26px">21 · Próximos pasos</div>
+    <h2>Construyamos <span class="grad">The Capital Network.</span></h2>
+    <p>Esta propuesta es una declaración de cómo entendemos su negocio y su marca. El siguiente paso es simple: una reunión para definir juntos el alcance, el equipo y el plan de trabajo del rebranding integral.</p>
+    <a href="mailto:florencia@somospopcorn.com?subject=MECHE%20×%20Popcorn%20—%20Rebranding" class="btn btn-c">Coordinemos la próxima reunión</a>
+    <div class="note">Documento de visión estratégica · Sin cotización en esta instancia · Popcorn</div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" style="filter:brightness(0) invert(1)"></div>
+      <div class="bt"><b>Popcorn</b><span>Marketing · Comunicación · Branding</span></div>
+    </div>
+    <div class="meta-f">
+      <b>De Mercado Cheque a MECHE · The Capital Network</b><br>
+      Propuesta estratégica de rebranding integral · Preparada por Popcorn
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
