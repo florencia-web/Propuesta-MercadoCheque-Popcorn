@@ -387,11 +387,11 @@ section{position:relative}
     </div>
     <div class="nav-links">
       <a href="#diagnostico">Diagnóstico</a>
-      <a href="#evolucion">Evolución</a>
       <a href="#territorio">Territorio</a>
       <a href="#concepto">Concepto</a>
       <a href="#sistema">Sistema visual</a>
       <a href="#plan">Plan</a>
+      <a href="#inversion">Inversión</a>
     </div>
     <a href="#cierre" class="nav-cta">Avancemos juntos</a>
   </div>
@@ -608,7 +608,7 @@ section{position:relative}
   </div>
 </section>
 
-<!-- ===================== 08 PROPÓSITO Y VISIÓN ===================== -->
+<!-- ===================== 09 PROPÓSITO Y VISIÓN ===================== -->
 <section class="sec sec-darker" style="background:var(--m-bg2)">
   <div class="wrap">
     <div class="s-head">
@@ -929,11 +929,90 @@ section{position:relative}
   </div>
 </section>
 
-<!-- ===================== 20 POR QUÉ POPCORN ===================== -->
+<!-- ===================== 21 INVERSIÓN ===================== -->
+<section class="sec sec-darker" id="inversion">
+  <style>
+    .inv{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+    .inv-incl{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:36px}
+    .inv-incl .h{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
+    .inv-incl h3{font-size:24px;margin-bottom:22px;letter-spacing:-.01em}
+    .inv-incl ul{list-style:none;display:flex;flex-direction:column;gap:0}
+    .inv-incl li{display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:var(--g300);padding:14px 0;border-top:1px solid rgba(255,255,255,.07);line-height:1.45}
+    .inv-incl li b{color:#fff;font-weight:600}
+    .inv-incl li .ck{width:20px;height:20px;border-radius:50%;background:rgba(94,234,212,.12);border:1px solid rgba(94,234,212,.4);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px}
+    .inv-incl .ex{margin-top:20px;font-size:12.5px;color:var(--g500);line-height:1.6;border-top:1px solid rgba(255,255,255,.07);padding-top:18px}
+    .inv-price{background:linear-gradient(165deg,var(--purple) 0%,var(--purple-deep) 100%);border:1px solid rgba(94,234,212,.3);border-radius:22px;padding:38px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+    .inv-price::before{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(94,234,212,.22),transparent 70%)}
+    .inv-price .lbl{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;position:relative}
+    .inv-price .amt{font-size:54px;font-weight:800;letter-spacing:-.03em;line-height:1;position:relative}
+    .inv-price .amt small{font-size:18px;font-weight:600;color:rgba(255,255,255,.7);vertical-align:super}
+    .inv-price .amt-sub{font-size:13px;color:rgba(255,255,255,.7);margin-top:10px;position:relative}
+    .inv-price .promo{margin-top:24px;background:rgba(94,234,212,.12);border:1px solid rgba(94,234,212,.4);border-radius:16px;padding:20px 22px;position:relative}
+    .inv-price .promo .pt{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+    .inv-price .promo .pamt{font-size:30px;font-weight:800;letter-spacing:-.02em}
+    .inv-price .promo .pamt small{font-size:13px;font-weight:600;color:rgba(255,255,255,.65);margin-left:8px}
+    .inv-price .promo p{font-size:12.5px;color:rgba(255,255,255,.78);margin-top:8px;line-height:1.5}
+    .inv-cond{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .cond{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:24px 22px}
+    .cond .ic{width:42px;height:42px;border-radius:11px;background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.3);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin-bottom:16px}
+    .cond h4{font-size:16px;margin-bottom:8px}
+    .cond p{font-size:13px;color:var(--g300);line-height:1.55}
+    .cond p b{color:#fff;font-weight:600}
+    .urgency{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;background:linear-gradient(92deg,rgba(94,234,212,.1),rgba(255,255,255,.02));border:1px solid rgba(94,234,212,.25);border-radius:20px;padding:26px 30px}
+    .urgency .big{font-size:46px;font-weight:800;letter-spacing:-.03em;background:linear-gradient(92deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;white-space:nowrap}
+    .urgency p{font-size:14.5px;color:var(--g300);line-height:1.6}
+    .urgency p b{color:#fff;font-weight:700}
+    @media(max-width:880px){.inv{grid-template-columns:1fr}.inv-cond{grid-template-columns:1fr}.urgency{grid-template-columns:1fr;text-align:center}}
+  </style>
+  <div class="wrap">
+    <div class="s-head">
+      <div class="eyebrow">20 · Inversión</div>
+      <h2>El corazón del rebranding: concepto, isologo y manual de marca.</h2>
+      <p>Esta inversión cubre la creación de la identidad: el activo que va a sostener toda la transformación. La web, las redes y el lanzamiento se planifican como etapas siguientes, una vez aprobada la marca.</p>
+    </div>
+    <div class="inv">
+      <div class="inv-incl">
+        <div class="h">Incluye</div>
+        <h3>Conceptos + Logo + Manual de marca</h3>
+        <ul>
+          <li><span class="ck">✓</span><div><b>Conceptos de marca.</b> Desarrollo y fundamentación del concepto creativo y validación del naming MECHE.</div></li>
+          <li><span class="ck">✓</span><div><b>Exploración de territorios.</b> Rutas de lenguaje gráfico y definición de la dirección elegida.</div></li>
+          <li><span class="ck">✓</span><div><b>Isologo + logotipo.</b> Diseño final del isologo, logotipo y versiones de uso (marca paraguas).</div></li>
+          <li><span class="ck">✓</span><div><b>Sistema base.</b> Paleta cromática, sistema tipográfico y sistema gráfico esencial.</div></li>
+          <li><span class="ck">✓</span><div><b>Manual de marca.</b> Brand book con construcción, usos, color, tipografía y aplicaciones.</div></li>
+        </ul>
+        <div class="ex">No incluido en esta etapa: sitio web, rediseño de redes, comunicación de lanzamiento y plan de implementación — se cotizan por separado como fases siguientes del proyecto.</div>
+      </div>
+      <div class="inv-price">
+        <div class="lbl">Inversión — Etapa de identidad</div>
+        <div class="amt"><small>$</small>3.450.000</div>
+        <div class="amt-sub">Valor total del entregable · IVA según corresponda</div>
+        <div class="promo">
+          <div class="pt">★ Pago 100% anticipado · -5%</div>
+          <div class="pamt">$3.277.500 <small>final</small></div>
+          <p>Bonificación del 5% por pago total por adelantado. Además, agiliza el arranque y nos permite reservar de inmediato a los dos recursos dedicados.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="urgency">
+      <div class="big">~30 días</div>
+      <p>Sabemos que el lanzamiento de MECHE no puede esperar. Para llegar lo más cerca posible del plazo de <b>30 días</b> solicitado, asignamos una <b>dupla dedicada —dirección creativa + diseño de identidad— trabajando en paralelo</b>, en lugar del flujo secuencial habitual. Dos recursos en simultáneo comprimen las etapas de concepto y sistema sin resignar profundidad.</p>
+    </div>
+
+    <div class="inv-cond">
+      <div class="cond"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h4>Plazo objetivo</h4><p>Entrega en torno a los <b>30 días</b> desde el anticipo y el kickoff, gracias al trabajo en paralelo.</p></div>
+      <div class="cond"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M4 20c0-3 2-5 5-5s5 2 5 5M14 15c3 0 6 2 6 5"/></svg></div><h4>Equipo dedicado</h4><p><b>Dos recursos en paralelo</b> para acelerar sin perder rigor estratégico ni creativo.</p></div>
+      <div class="cond"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Condición de pago</h4><p><b>50%</b> para iniciar el proyecto y <b>50%</b> al mes o al finalizarlo, lo que ocurra primero. O bien <b>-5% por pago 100% anticipado.</b> El entregable se inicia con la confirmación del pago.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 22 POR QUÉ POPCORN ===================== -->
 <section class="sec sec-dark">
   <div class="wrap">
     <div class="s-head">
-      <div class="eyebrow">20 · Por qué Popcorn</div>
+      <div class="eyebrow">21 · Por qué Popcorn</div>
       <h2>No diseñamos una marca. Acompañamos una transformación.</h2>
       <p>La diferencia entre una agencia que entrega un logo y un socio que entiende que están creando una categoría.</p>
     </div>
@@ -948,11 +1027,10 @@ section{position:relative}
 <!-- ===================== 21 CIERRE ===================== -->
 <section class="close" id="cierre">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--cyan);justify-content:center;margin-bottom:26px">21 · Próximos pasos</div>
+    <div class="eyebrow" style="color:var(--cyan);justify-content:center;margin-bottom:26px">22 · Próximos pasos</div>
     <h2>Construyamos <span class="grad">The Capital Network.</span></h2>
-    <p>Esta propuesta es una declaración de cómo entendemos su negocio y su marca. El siguiente paso es simple: una reunión para definir juntos el alcance, el equipo y el plan de trabajo del rebranding integral.</p>
-    <a href="mailto:florencia@somospopcorn.com?subject=MECHE%20×%20Popcorn%20—%20Rebranding" class="btn btn-c">Coordinemos la próxima reunión</a>
-    <div class="note">Documento de visión estratégica · Sin cotización en esta instancia · Popcorn</div>
+    <a href="mailto:florencia@somospopcorn.com?subject=MECHE%20×%20Popcorn%20—%20Rebranding" class="btn btn-c" style="margin-top:8px">Coordinemos la próxima reunión</a>
+    <div class="note">Documento de visión estratégica e inversión · Etapa de identidad · Popcorn</div>
   </div>
 </section>
 
